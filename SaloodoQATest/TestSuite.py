@@ -223,3 +223,7 @@ class LoginTestSuite(unittest.TestCase):
         login.click_login_button_on_main_page()                                        # Step 2 : Click on login button
         self.assertEqual(self.driver.current_url, TestSuiteData.LoginPageURL)          # Step 3 : Verify navigated to login page
         self.driver.get_screenshot_as_file('Screenshots/Test_10_Login_Screen.png')     # Capture/Take Screen shot
+		
+		
+if __name__ == '__main__':
+    unittest.main()
